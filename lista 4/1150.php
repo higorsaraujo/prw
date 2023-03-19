@@ -1,28 +1,18 @@
 <?php
 
-$z=0;
-$soma=1;
-$teste=0;
 
 $x = readline();
 
-while(!($z>$x)){
-	echo "$z\n";
+do{
+	$z = readline();
 }
+while($x>=$z);
 
 
-$teste=$x;
-
-
-while($teste<$z){
-	
-	$x++;
-	
-	$teste = $teste + $x;
-	
-	
+for($a=$x ,$b=0; $b<$z; $a++)
+{
+	$b+=$a;
 	$soma++;
-		
 }
 
 echo "$soma\n";
