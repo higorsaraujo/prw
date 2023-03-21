@@ -7,7 +7,7 @@ while(true){
     }
 
     for($i=0;$i<$n;$i++){
-        $str =
+        $str = 
     }
 
 
