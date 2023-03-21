@@ -10,10 +10,8 @@ $a = (int)$x[0];
 $b = (int)$x[$i];
 
 
-while ($b <= 0){
-    $i++;
-    $b = readline();
-}
+do{$b = readline(); $i++;}
+while ($b <= 0);
 
 $y = 0;
 
