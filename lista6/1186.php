@@ -12,15 +12,15 @@ for($i=0;$i<12;$i++){
     }
 }
 
-$limite = 11;
+$limite = 0;
 
-for($i=0;$i<11;$i++){
+for($i=11;$i>0;$i--){
 
-    for($j=0;$j<$limite;$j++){
+    for($j=11;$j>$limite;$j--){
         $soma += $m[$i][$j];
         $cont++;
     }
-    $limite--;
+    $limite++;
 }
 
 

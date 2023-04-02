@@ -12,11 +12,18 @@ for($i=0;$i<12;$i++){
     }
 }
 
-$limite = 11;
+for($i=0;$i<6;$i++){
+    for($j=0;$j<6;$j++){
+        if($j < $i){
+            $soma += $m[$i][$j];
+            $cont++;
+        }
+    }
+}
 
-for($i=0;$i<11;$i++){
+for($i=0;$i<6;$i++){
 
-    for($j=0;$j<$limite;$j++){
+    for($j=6;$j<$limite;$j++){
         $soma += $m[$i][$j];
         $cont++;
     }
