@@ -16,7 +16,7 @@ for($i=0;$i<12;$i++){
 
 for($i=0;$i<6;$i++){
     for($j=0;$j<6;$j++){
-        if($j > $i){
+        if($j < $i){
             $soma += $m[$i][$j];
             $cont++;
         }
@@ -26,11 +26,10 @@ for($i=0;$i<6;$i++){
 //area pertencente a demarcação da diagonal secundaria
 
 
-$limite = 11;
+$limite = 5;
+for($i=6;$i<11;$i++){
 
-for($i=0;$i<6;$i++){
-
-    for($j=6;$j<$limite;$j++){
+    for($j=0;$j<$limite;$j++){
         $soma += $m[$i][$j];
         $cont++;
     }
