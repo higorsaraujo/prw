@@ -2,7 +2,7 @@
 
 $sal = readline();
 
-if ($val >= 0 and)
+if ($val >= 0 and $val)
 
 
 ?>
