@@ -1,14 +1,15 @@
 <?php
 
-
-$val = 0;
-
-
 while(true){
+    
+    $val = 0;
     $n = readline();
     if($n == 0){
+        echo "\n";
         break;
     }
+
+    
 
     $str = array();
 
@@ -33,17 +34,12 @@ while(true){
         $quant = $val - strlen($str[$i]);
         $preenche = str_repeat(" ",$quant);
 
-        $str[$i] = $preenche.$str[$i];
+        echo $preenche.$str[$i]."\n";
 
         $quant = 0;
     }
-
-    for ($i = 0; $i < $n; $i++){
-        echo ($str[$i]).PHP_EOL;
-    }
-
+    
     echo "\n";
-
 }
 
 ?>

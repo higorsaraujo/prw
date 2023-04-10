@@ -1,6 +1,6 @@
 <?php
 
-while($s = fgets(STDIN)){
+while($s = trim(fgets(STDIN))){
 
     $especial = 0; //se tem espaco, caractere especial ou pontuacao
     $mai = 0;
@@ -17,11 +17,14 @@ while($s = fgets(STDIN)){
 
     }
 
-    $tamanho = strlen($s);
+    if (strlen($s) < 6 || strlen($s) > 32) {
+        echo "Senha invalida.\n";
+        continue;
+    }
 
-    if($tamanho < 6 or $tamanho > 32 or $especial!=0 or $mai==0 or $min==0 or $num==0){
-        echo "senha invalida.\n";
-    } else {echo "senha valida.\n";}
+    if($especial==0 && $mai>0 or $min>0 && $num>0){
+        echo "Senha valida.\n";
+    } else {echo "Senha invalida.\n";}
 
 }
 
